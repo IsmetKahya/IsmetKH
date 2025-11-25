@@ -1,0 +1,49 @@
+.collegas {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.collega {
+    background-color: bisque;
+    border-radius: 20px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    text-align: center;
+    padding: 35px;
+}
+.avatar img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+.collega>img{
+    display: flex;
+    height: 24px;
+    width: 24px;
+    object-position: right top;
+    object-fit: cover;
+    margin-left: 160px;
+    margin-bottom: 10px;
+}
+.collega:first-child>img {
+    object-position: left top;
+    margin-left: 160px;
+    margin-bottom: 10px;
+}
+.collega:nth-child(2)>img {
+    object-position: center;
+    margin-left: 160px;
+    margin-bottom: 10px;
+}

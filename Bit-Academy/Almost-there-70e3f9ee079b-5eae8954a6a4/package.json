@@ -1,0 +1,26 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "Deep-dive data",
+  "homepage": "https://github.com/Pxtr-coder/Data-deep-dive#readme",
+  "bugs": {
+    "url": "https://github.com/Pxtr-coder/Data-deep-dive/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pxtr-coder/Data-deep-dive.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.13",
+    "@tailwindplus/elements": "^1.0.12",
+    "tailwindcss": "^4.1.13"
+  },
+  "scripts": {
+    "watch": "tailwindcss -i src/style.css -o dist/output.css --watch"
+  }
+}

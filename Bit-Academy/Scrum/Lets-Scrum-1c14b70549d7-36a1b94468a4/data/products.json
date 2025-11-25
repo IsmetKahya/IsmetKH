@@ -1,0 +1,183 @@
+{
+  "Man": {
+    "T-shirts": [{
+      "id": 1,
+      "name": "Polo New Port",
+      "size": "S",
+      "price": 30,
+      "amount": 100,
+      "img_path": "../images/products/man1.png"
+    },
+    {
+      "id": 2,
+      "name": "Polo New Port",
+      "size": "M",
+      "price": 30,
+      "amount": 100,
+      "img_path": "../images/products/man1.png"
+    }],
+    "Jeans": {
+      "id": 1,
+      "name": "Sweatpants inboard",
+      "size": "L",
+      "price": 65,
+      "amount": 100,
+      "img_path": "../images/products/man2.png"
+    },
+    "Shorts": {
+      "id": 1,
+      "name": "Shorts Heren Luff",
+      "size": "M",
+      "price": 85,
+      "amount": 100,
+      "img_path": "../images/products/man3.png"
+    },
+    "Jackets": {
+      "id": 1,
+      "name": "Loc des Voux",
+      "size": "M",
+      "price": 79.99,
+      "amount": 100,
+      "img_path": "../images/products/man1.png"
+    }
+  },
+  "Woman": {
+    "T-shirts": [
+      {
+        "id": 1,
+        "name": "Dames Reef",
+        "size": "XS",
+        "price": 20,
+        "amount": 100,
+        "img_path": "../images/products/woman1.png"
+      },
+      {
+        "id": 2,
+        "name": "Polo Dames",
+        "size": "S",
+        "price": 50,
+        "amount": 100,
+        "img_path": "../images/products/woman2.png"
+      }
+    ],
+    "Jeans": [{}],
+    "Shorts": {
+      "id": 1,
+      "name": "Skort Dames",
+      "size": "M",
+      "price": 80,
+      "amount": 100,
+      "img_path": "../images/products/woman3.png"
+    },
+    "Jackets": [
+      {
+        "id": 1,
+        "name": "Monte Baldo",
+        "size": "M",
+        "price": 110,
+        "amount": 100,
+        "img_path": ""
+      },
+      {
+        "id": 2,
+        "name": "Sea Breeze",
+        "size": "L",
+        "price": 65,
+        "amount": 100,
+        "img_path": ""
+      }
+    ]
+  },
+  "Kids": {
+    "T-shirts": [
+      {
+        "id": 1,
+        "name": "Disney Lilo",
+        "size": "S",
+        "price": 35,
+        "amount": 100,
+        "img_path": "../images/products/kids1.png"
+      }
+    ],
+    "Trainingspack": [
+      {
+        "id": 1,
+        "name": "Trainingspack Kids",
+        "size": "XS",
+        "price": 50,
+        "amount": 100,
+        "img_path": "../images/products/kids2.png"
+      },
+      {
+        "id": 2,
+        "name": "Tiro Nations",
+        "size": "S",
+        "price": 65,
+        "amount": 100,
+        "img_path": "../images/products/kids3.png"
+      }
+    ],
+    "Shorts": {
+      "id": 1,
+      "name": "Short T-shirt",
+      "size": "XS",
+      "price": 30,
+      "amount": 100,
+      "img_path": ""
+    },
+    "Jackets": {
+      "id": 1,
+      "name": "Entrada 22",
+      "size": "S",
+      "price": 50,
+      "amount": 100,
+      "img_path": ""
+    }
+  },
+  "Shoes": {
+    "Sneakers": [
+      {
+        "id": 1,
+        "name": "Ozweego schoenen",
+        "size": "M",
+        "price": 50,
+        "amount": 100,
+        "img_path": ""
+      },
+      {
+        "id": 2,
+        "name": "Ozweego schoenen",
+        "size": "L",
+        "price": 50,
+        "amount": 100,
+        "img_path": ""
+      }
+    ],
+    "Boots": [
+      {
+        "id": 1,
+        "name": "Oxford Midnight",
+        "size": "L",
+        "price": 170,
+        "amount": 100,
+        "img_path": "../images/products/shoes1.png"
+      },
+      {
+        "id": 2,
+        "name": "Snake Stone",
+        "size": "L",
+        "price": 120,
+        "amount": 100,
+        "img_path": "../images/products/shoes2.png"
+      },
+      {
+        "id": 3,
+        "name": "Chelsea Maroon",
+        "size": "M",
+        "price": 200,
+        "amount": 100,
+        "img_path": "../images/products/shoes3.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+.mijnbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.secondbox {
+    flex-direction: row;
+}

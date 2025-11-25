@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+}
+.side1 {
+    width: 250px; /* Sidebar genişliği */
+    background-color: #005bbb;
+    color: white;
+    padding: 25px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.mijnbox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.secondbox {
+    display: flex;
+    flex-direction: row;
+}
+.side2 {
+    width: 250px; /* Sidebar genişliği */
+    background-color: #005bbb;
+    color: white;
+    padding: 25px;
+    font-size: 20px;
+}

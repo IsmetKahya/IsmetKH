@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    border: 2px solid black;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    height: 205px;
+}
+.card p {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}
+.example {
+    border: 2px solid black;
+    width: 100px;
+    height: 205px;
+    padding: 10px;
+    text-align: center;   
+}
+.example p {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}

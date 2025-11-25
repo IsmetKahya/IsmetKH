@@ -1,0 +1,22 @@
+#image {
+    width: 400px;
+    height: 400px;
+}
+.buttons button{
+    background-color: rgb(255, 164, 212);
+    border: none;
+    border-radius: 50%;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 3px gray solid;
+    width: 400px;
+    align-items: center;
+}
+h1 {
+    background-color: pink;
+    width: 400px;
+    text-align: center;
+}

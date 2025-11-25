@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.persons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+/* .persons {
+    ;
+} */
+.flag {
+    width: 20px;
+}
+.persons div {
+    border: 2px solid blue;
+    
+}
+.persons h3 {
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.country {
+    width: 40px;
+}

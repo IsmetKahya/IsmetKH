@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+}
+
+
+.persons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 10px;  
+    margin-left: 200px
+}
+
+.card {
+    border: 2px solid #000;
+    width: 200px;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+}

@@ -1,0 +1,25 @@
+.kitchenAid h1{
+    margin-left: 100px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 20px;
+}
+#invoer {
+    width: 120px;
+    margin-left: 75px;
+}
+#startEenheid {
+    width: 129px;
+    height: 20px;
+    margin-left: 35px;
+}
+#convertEenheid {
+    width: 129px;
+    height: 20px;
+}
+#output {
+    margin-left: 320px;
+}

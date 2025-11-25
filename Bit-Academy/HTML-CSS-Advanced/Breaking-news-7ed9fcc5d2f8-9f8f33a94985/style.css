@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    background-color: orange;
+    color: white;
+    flex: auto;
+    justify-content: space-around;
+}
+
+.content {
+    font-size: 25px;
+    background-color: rgb(246, 189, 161);
+    display: flex;
+    padding: 10px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.news {
+    flex: 1 1 20%;
+    margin: 0px 10px;
+}
+.news:first-child {
+    flex: 1 1 100%;
+    margin: 0;
+    padding: 0;
+}
+.news:first-child h1 {
+    text-align: center;
+}
+.news h1 {
+    text-align: center;
+}
+
+#breaking h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#breaking {
+    order: -1;
+    max-width: 45%;
+}
+

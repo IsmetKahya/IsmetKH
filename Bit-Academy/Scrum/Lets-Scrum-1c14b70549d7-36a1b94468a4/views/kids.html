@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Heren</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm fw-bold" id="nav">
+        <!-- wrapper container start-->
+        <div class="container-fluid">
+            <a class="navbar-brand mb-2 mb-md-0" href="../index.html">
+                <img src="../images/icons/logo.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                aria-expanded="false" aria-label="Toggle navigation" id="toggle-btn">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <!--collapsable-container start-->
+            <div class="collapse navbar-collapse mt-3 mt-md-0 justify-content-center" id="navbarTogglerDemo01">
+                <ul class="navbar-nav text-black fs-5 gap-md-5 gap-sm-0 mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/man.html">Heren</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/woman.html">Dames</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../views/kids.html">Kinderen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/shoes.html">Schoenen</a>
+                    </li>
+                </ul>
+            </div>
+            <!--collapsable-container end-->
+            <!--right side-container start-->
+            <div class="d-flex align-items-center gap-5 gap-md-0">
+                <div class="me-3 border bg-white rounded-3 w-100">
+                    <form class="d-flex" role="search">
+                        <input class="form-control border border-0 search" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-dark border border border-0" type="submit" aria-label="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a role="button" class="text-dark me-2 shopping-cart" aria-label="Shopping Cart"
+                        data-bs-toggle="offcanvas" data-bs-target="#shoping-cart">
+                        <div class="d-none rounded-circle text-center" id="notification">
+                        </div>
+                        <i class="fas fa-lg fa-shopping-cart"></i>
+                    </a>
+                    <div class="dropdown">
+                        <a class="d-flex align-items-center" id="navbarDropdownMenuAvatar" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../images/icons/admin-avatar.jpg" alt="admin-avatar" class="rounded-circle"
+                                height="26" loading="lazy">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end fs-6" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li><a role="button" class="dropdown-item" id="admin-login" data-bs-toggle="modal"
+                                    data-bs-target="#loginModal">Inloggen</a></li>
+                            <li><a role="button" class="dropdown-item" id="admin-logout">Uitloggen</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--right side-container end-->
+            <!-- login modal start -->
+            <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true"
+                aria-label="Login Modal" data-bs-backdrop="static" data-bs-keybaord="false">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content border rounded-5 w-75">
+                        <div class="modal-header border border-0">
+                            <button type="button" class="btn btn-sm btn-close border border-0 mt-2"
+                                aria-label="Close button" data-bs-dismiss="modal"></button>
+                        </div>
+                        <p class="modal-title fs-5 text-uppercase text-center">Inloggen</p>
+                        <div class="modal-body d-flex justify-content-center">
+                            <form action="../admin/products.html" id="loginForm">
+                                <div class="mb-3 form-group">
+                                    <label for="username" class="form-label">Gebruiksnaam</label>
+                                    <input type="text" class="form-control" id="username">
+                                    <span class="text-danger error-message"></span>
+                                </div>
+                                <div class="mb-3 form-group">
+                                    <label for="password" class="form-label">Wachtwoord</label>
+                                    <input type="password" class="form-control" id="password">
+                                    <span class="text-danger error-message"></span>
+                                </div>
+                                <button type="submit" class="btn btn-sm buttons" id="loginBtn">Registreren</button>
+                            </form>
+                            <div>
+                                <svg width="60px" height="278px" viewBox="0 0 67 578" version="1.1">
+                                    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+                                    <title>Uitzending</title>
+                                    <desc>Gemaakt met Sketch.</desc>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <path
+                                            d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z"
+                                            id="Path" fill="#F9BC35"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- login modal end -->
+        </div>
+        <!-- wrapper-container end -->
+    </nav>
+    <main class="h-100">
+        <!-- canvas shoping cart start -->
+        <div class="offcanvas offcanvas-end" id="shoping-cart">
+            <div class="offcanvas-header">
+                <h2 class="h2 text-dark">Winkelwagen</h2>
+                <button type="button" class="btn-close text-reset" aria-label="Close button"
+                    data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container-fluid ms-auto">
+                    <div class="row p-2" id="shoping-container">
+
+                    </div>
+                    <div class="row justify-content-end" id="bottom-row">
+                        <div class="col-md-7">
+                            <div class="d-flex justify-content-between align-items-center p-0">
+                                <button type="button" class="btn btn-sm buttons border border-0"
+                                    id="order-btn">Bestelling</button>
+                                <button type="button" class="btn btn-sm buttons border border-0"
+                                    id="shoping-btn">Verder
+                                    winkelen</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- order confirmation toast start -->
+            <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
+                <div id="confirmation-toast" class="toast bg-success text-white" role="alert" aria-live="assertive"
+                    aria-atomic="true">
+                    <div class="toast-header">
+                        <strong class="me-auto">Bestelling bevestigd!</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Je bestelling is succesvol voltooid.
+                    </div>
+                </div>
+            </div>
+            <!-- order confirmation toast end -->
+        </div>
+        <!-- canvas shoping cart end -->
+        <!-- canvas sort start -->
+        <div class="offcanvas offcanvas-start" id="canvas">
+            <div class="offcanvas-header">
+                <h1 class="h1 text-dark">Online winkel</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close button"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container-fluid ms-auto">
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <button type="button" class="btn btn-sm buttons" id="reset-filter">
+                                <i class="fa-solid fa-filter-circle-xmark"></i> Filter opnieuw instellen
+                            </button>
+                        </div>
+                        <div class="col-12">
+                            <p class="fa-4 m-0">Maat</p>
+                            <div class="form-check size">
+                                <input type="checkbox" class="form-check-input" id="filter-xs">
+                                <label class="form-check-label" for="filter-xs">XS</label>
+                            </div>
+                            <div class="form-check size">
+                                <input type="checkbox" class="form-check-input" id="filter-s">
+                                <label class="form-check-label" for="filter-s">S</label>
+                            </div>
+                            <div class="form-check size">
+                                <input type="checkbox" class="form-check-input" id="filter-m">
+                                <label class="form-check-label" for="filter-m">M</label>
+                            </div>
+                            <div class="form-check size">
+                                <input type="checkbox" class="form-check-input" id="filter-l">
+                                <label class="form-check-label" for="filter-l">L</label>
+                            </div>
+                            <div class="mt-3">
+                                <p class="fa-4 m-0">Kledingtype</p>
+                                <div class="form-check type">
+                                    <input type="checkbox" class="form-check-input" id="filter-t-shirt">
+                                    <label class="form-check-label" for="filter-t-shirt">T-shirt</label>
+                                </div>
+                                <div class="form-check type">
+                                    <input type="checkbox" class="form-check-input" id="filter-jeans">
+                                    <label class="form-check-label" for="filter-jeans">Broeken</label>
+                                </div>
+                                <div class="form-check type">
+                                    <input type="checkbox" class="form-check-input" id="filter-shorts">
+                                    <label class="form-check-label" for="filter-shorts">Korte broeken</label>
+                                </div>
+                                <div class="form-check type">
+                                    <input type="checkbox" class="form-check-input" id="filter-jackets">
+                                    <label class="form-check-label" for="filter-jackets">Jassen</label>
+                                </div>
+                                <div class="form-check type">
+                                    <input type="checkbox" class="form-check-input" id="filter-trainingspack">
+                                    <label class="form-check-label" for="filter-trainingspack">Trainingspack</label>
+                                </div>
+                                <div class="form-check type">
+                                    <input type="checkbox" class="form-check-input" id="filter-shoes">
+                                    <label class="form-check-label" for="filter-shoes">Schoenen</label>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p class="fa-4 m-0">Prijs</p>
+                                <div class="form-check price">
+                                    <input type="checkbox" class="form-check-input" id="filter-20">
+                                    <label class="form-check-label" for="filter-20">20 €</label>
+                                </div>
+                                <div class="form-check price">
+                                    <input type="checkbox" class="form-check-input" id="filter-50">
+                                    <label class="form-check-label" for="filter-50">50 €</label>
+                                </div>
+                                <div class="form-check price">
+                                    <input type="checkbox" class="form-check-input" id="filter-100">
+                                    <label class="form-check-label" for="filter-100">100 €</label>
+                                </div>
+                                <div class="form-check price">
+                                    <input type="checkbox" class="form-check-input" id="filter-200">
+                                    <label class="form-check-label" for="filter-200">200 €</label>
+                                </div>
+                                <div class="form-check price">
+                                    <input type="checkbox" class="form-check-input" id="filter-300">
+                                    <label class="form-check-label" for="filter-300">300 €</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- canvas sort end -->
+        <div class="container-fluid mt-4">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-6 mx-auto align-content-center px-sm-0" id="filter-container">
+                    <div class="d-flex justify-content-between gap-1 align-items-center text-nowrap mt-4">
+                        <h2 class="display-1 fw-bold">KINDEREN</h2>
+                        <button class="btn btn-sm buttons" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#canvas">
+                            <i class="fa-solid fa-filter"></i> Filteren & Sorteren
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3" id="row-parent">
+            </div>
+        </div>
+
+        <!-- products start -->
+        <div class="container d-flex gap-5 justify-content-around mb-5">
+            <div class="row" id="product-list"></div>
+        </div>
+        <!-- products end -->
+
+
+
+        <!-- footer start -->
+        <footer class="bg-black text-light py-4 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h5 class="fw-bold fs-1">Online kledingwinkel</h5>
+                    </div>
+                    <div class="col-md-2 text-end">
+                        <a href="#" class="text-light fs-1 me-2" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-light fs-1" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <hr class="border-light">
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <p class="fs-3 fw-bold">Groningen</p>
+                        <p class="fs-5 mt-5">Adres: Zuiderdiep 11, 5621RE</p>
+                        <p class="fs-5">chshop@gmail.com</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="fs-3 fw-bold">Contact:</h5>
+                        <p class="fs-5 mt-5">06 - 10 86 07 33</p>
+                        <p class="fs-5">Whatsapp Chat</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+        <!-- footer end -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../authentication/login.js"></script>
+    <script src="../js/kids.js" defer></script>
+</body>
+
+</html>

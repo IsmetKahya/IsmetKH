@@ -1,0 +1,17 @@
+.baslik {
+    text-align: center;
+}
+button {
+    border-radius: 50px;
+    font-size: 30px;
+    background-color: rgb(18, 190, 216);
+    width: 200px;
+    border: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+.tooltip:hover{
+    background-color: black;
+    color: white;
+}
+p:hover {
+    background-color: black;
+    color: white;
+}
+h2:hover{
+    background-color: black;
+    color: white;
+}
